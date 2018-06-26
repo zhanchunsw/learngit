@@ -16,20 +16,25 @@ DEPENDENCIES:
   - Expecta
   - Expecta+Snapshots
   - FBSnapshotTestCase
-  - pod_test (from `../`)
+  - pod_test (from `https://github.com/zhanchunsw/learngit.git`)
   - Specta
 
 EXTERNAL SOURCES:
   pod_test:
-    :path: ../
+    :git: https://github.com/zhanchunsw/learngit.git
+
+CHECKOUT OPTIONS:
+  pod_test:
+    :commit: 61b23d24d06d05cd2f7e284c84ca3889f0bde146
+    :git: https://github.com/zhanchunsw/learngit.git
 
 SPEC CHECKSUMS:
   Expecta: 3b6bd90a64b9a1dcb0b70aa0e10a7f8f631667d5
   Expecta+Snapshots: dcff217eef506dabd6dfdc7864ea2da321fafbb8
   FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
-  pod_test: ab971ac0b4c2bfa4a5bfaaced4c72ca7e4d6d4ea
+  pod_test: 5f019519aea3f9051c1868b0d1bbe2e3e2deddd8
   Specta: 3e1bd89c3517421982dc4d1c992503e48bd5fe66
 
-PODFILE CHECKSUM: 6cf75827ce9004ad62379b404cca545926efc9d4
+PODFILE CHECKSUM: 0e9db989ac16186f40093460d2c8f9c7e53d75aa
 
 COCOAPODS: 1.4.0

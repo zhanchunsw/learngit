@@ -1,0 +1,33 @@
+蓝牙控车 RGBleSDK
+1、静态库中采用Objective-C++实现，因此需要您保证您工程中至少有一个.mm后缀的源文件(您可以将任意一个.m后缀的文件改名为.mm)，或者在工程属性中指定编译方式，即在Xcode的Project -> Edit Active Target -> Build Setting 中找到 Compile Sources As，并将其设置为"Objective-C++"
+2、环境配置
+在TARGETS->Build Settings->Other Linker Flags 中添加-ObjC，字母O和C大写。
+*/
+
+
+分享：采用OpenShare 已集成在润霖framework中
+调用分享页面时 需要引用以下代码
+#import "RLInclude.h"
+//分享统一采用OpenShare 设置微信分享key
+[RLInclude setWexinKey];;
+
+网络环境：根据TM所需的网络环境可进行设置  0 uat环境 1 线上环境
+#import "RLNetWorkEnviromentNumber.h"
+[[RLNetWorkEnviromentNumber sharedManager]setNetWorkEnviromentNumber:0];
+
+跳转页面 
+跳转模式：present
+参数：具体参照 RLInclude 注解 
+例：
+UIViewController *v = [RLInclude getRLCommentsViewControllerWithorderNumber:@"DD2018032809333788188" userid:@"102862" paymentStatus:@"已支付" money:@"200" rentalLocation:@"虹桥停车场" returnCarLocation:@"华鑫天地停车场" JumpTODetailedCost:^(UIViewController *VC) {
+    }];
+[self presentViewController:v animated:YES completion:nil];
+
+广告弹出 参考代码
+FuckViewController *root = [[FuckViewController alloc] init];
+//    JustATestVC *justTestVC = [[JustATestVC alloc] init];
+// 在首页弹出广告页面
+[root presentJKPopupViewController:[RLInclude getRLAdvertisementViewController]];
+self.window.rootViewController = root;
+[self.window makeKeyAndVisible];
+
