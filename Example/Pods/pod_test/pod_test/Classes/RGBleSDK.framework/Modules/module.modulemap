@@ -1,6 +1,0 @@
-framework module RGBleSDK {
-  umbrella header "RGBleSDK.h"
-
-  export *
-  module * { export * }
-}

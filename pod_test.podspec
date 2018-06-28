@@ -1,4 +1,4 @@
-#
+
 # Be sure to run `pod lib lint pod_test.podspec' to ensure this is a
 # valid spec before submitting.
 #
@@ -8,9 +8,9 @@
 
 Pod::Spec.new do |s|
   s.name             = 'pod_test'
-  s.version          = '0.1.6'
+  s.version          = '0.1.8'
   s.summary          = 'hello world~'	
-#  s.vendored_frameworks = 'pod_test/RGBleSDK.framework'
+  s.vendored_frameworks = 'pod_test/TMRCSFramework.framework'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?

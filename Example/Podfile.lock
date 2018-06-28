@@ -9,7 +9,7 @@ PODS:
   - FBSnapshotTestCase/Core (2.1.4)
   - FBSnapshotTestCase/SwiftSupport (2.1.4):
     - FBSnapshotTestCase/Core
-  - pod_test (0.1.0)
+  - pod_test (0.1.6)
   - Specta (1.0.7)
 
 DEPENDENCIES:
@@ -25,14 +25,14 @@ EXTERNAL SOURCES:
 
 CHECKOUT OPTIONS:
   pod_test:
-    :commit: 5cf379fed06efaa5a0735caf407edebc374709cf
+    :commit: 3f77a80a1173203cb403574285cd8ff7741849fb
     :git: https://github.com/zhanchunsw/learngit.git
 
 SPEC CHECKSUMS:
   Expecta: 3b6bd90a64b9a1dcb0b70aa0e10a7f8f631667d5
   Expecta+Snapshots: dcff217eef506dabd6dfdc7864ea2da321fafbb8
   FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
-  pod_test: 33e7a39e973409ac4f48d2a316f725f7d322aa4f
+  pod_test: 8ea487e5819e6d4e849cc045fcc14c02e6532cec
   Specta: 3e1bd89c3517421982dc4d1c992503e48bd5fe66
 
 PODFILE CHECKSUM: 0e9db989ac16186f40093460d2c8f9c7e53d75aa
